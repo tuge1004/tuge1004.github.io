@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Melody for oeasy</title>
+    <title>献给oeasy的旋律</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         /* 页面样式 */
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460);
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             color: white;
-            overflow: hidden;
-            position: relative;
+            overflow-x: hidden;
         }
 
         /* 科技感网格背景 */
@@ -48,6 +48,7 @@
         }
 
         h1 {
+            font-family: 'Pacifico', cursive;
             font-size: 2.5rem;
             margin-bottom: 20px;
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -69,6 +70,7 @@
             margin: 20px 0;
             line-height: 1.6;
             font-size: 1.1rem;
+            font-weight: 300;
         }
 
         .rainbow-text {
@@ -83,6 +85,7 @@
             font-size: 1.5rem;
             margin: 20px 0;
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-weight: 500;
         }
 
         @keyframes rainbow {
@@ -104,12 +107,13 @@
             border-radius: 8px;
             font-style: italic;
             font-size: 0.9rem;
+            font-weight: 300;
         }
 
         .meme {
             margin: 20px 0;
             font-size: 1.2rem;
-            font-weight: bold;
+            font-weight: 500;
             color: #4cc9f0;
         }
 
@@ -148,6 +152,18 @@
                 opacity: 0;
             }
         }
+
+        /* 视频容器 */
+        .video-container {
+            margin: 30px 0;
+            width: 100%;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -156,31 +172,39 @@
 
     <!-- 主内容 -->
     <div class="container">
-        <h1>A Melody for oeasy</h1>
+        <h1>献给oeasy的旋律</h1>
 
         <!-- 彩虹屁 -->
-        <p class="rainbow-text">Dedicated to oeasy, the von Neumann of computing, and the Herbart of education!</p>
+        <p class="rainbow-text">谨以此先给oeasy老师，计算机界的冯·诺依曼，教育界的‌赫尔巴特！</p>
 
-        <p class="description">This is a heartfelt melody dedicated to oeasy. May this tune bring you warmth and touch your heart (score and score).</p>
+        <p class="description">这是一首充满情感的旋律，献给oeasy老师。希望这首曲子能带给您（我）一丝温暖和感动（分数和分数）</p>
 
         <!-- 搞笑梗 -->
-        <p class="meme">Major "True Fragrance" scene: From "I'll never watch oeasy's videos again" to "Long live oeasy!" it only takes one tutorial.</p>
+        <p class="meme">大型真香现场：从“我再也不看oeasy的视频了”到“oeasy万岁！”只差一集教程。</p>
+
+        <!-- 视频播放器 -->
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="oeasy.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+        </div>
 
         <!-- 音频播放器 -->
         <div class="audio-container">
             <audio controls>
                 <source src="A Melody for oeasy (with hastily written lyrics).mp3" type="audio/mp3">
-                Your browser does not support the audio element.
+                您的浏览器不支持音频播放。
             </audio>
         </div>
 
         <!-- 致歉声明 -->
         <div class="apology">
-            <p>Special Note: The lyrics were indeed hastily written, but this isn't a literature assignment. What? New media is under the umbrella of literature? I don't care, traditional new media has no future.</p>
+            <p>特别说明：填词部分确实很草率，不过嘛，这也不是文学类作业。什么？新传下属文学大类？我不管，传统新传是没有未来的</p>
         </div>
 
         <!-- 更多梗 -->
-        <p class="meme">Friendly Reminder: If the audio doesn't load, it might be because oeasy was so excited that he shook the server offline! Please try again later~</p>
+        <p class="meme">温馨提示：如果音频加载不出来，可能是oeasy老师太激动，把服务器都震宕机了！请稍后再试~</p>
     </div>
 
     <script>
